@@ -6,8 +6,8 @@ import (
 	"strconv"
 )
 
-func GetFloats(fileName string) ([3]float64, error) {
-	var numbers [3]float64
+func GetFloats(fileName string) ([]float64, error) {
+	var numbers []float64
 	file, err := os.Open(fileName)
 	if err != nil {
 		return numbers, err
